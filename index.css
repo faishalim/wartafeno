@@ -647,8 +647,8 @@ pre.wp-block-verse{overflow:auto;white-space:pre-wrap}:where(pre.wp-block-verse)
             display: none !important; 
         }
         .hdr-nav {
-            padding: 10px 0 !important;
-            height: 60px !important; /* Fixed height for consistent centering */
+            padding: 0 !important;
+            height: 65px !important; 
             display: flex !important;
             align-items: center !important;
         }
@@ -656,26 +656,31 @@ pre.wp-block-verse{overflow:auto;white-space:pre-wrap}:where(pre.wp-block-verse)
             padding: 0 15px !important;
             display: flex !important;
             align-items: center !important;
-            justify-content: space-between !important;
+            justify-content: center !important;
             width: 100% !important;
             max-width: 100% !important;
             position: relative !important;
+            height: 100% !important;
         }
         .hdr-logo-sticky-left {
             display: flex !important;
+            visibility: visible !important;
+            opacity: 1 !important;
             align-items: center !important;
-            position: absolute !important;
-            left: 50% !important;
-            top: 50% !important;
-            transform: translate(-50%, -50%) !important;
+            position: relative !important;
+            left: auto !important;
+            top: auto !important;
+            transform: none !important;
             gap: 8px !important;
             white-space: nowrap !important;
             margin: 0 !important;
             width: auto !important;
+            z-index: 99 !important;
         }
         .hdr-logo-icon {
-            height: 30px !important;
+            height: 32px !important;
             width: auto !important;
+            display: block !important;
         }
         .brand-container {
             width: auto !important;
@@ -684,10 +689,11 @@ pre.wp-block-verse{overflow:auto;white-space:pre-wrap}:where(pre.wp-block-verse)
             justify-content: center !important;
         }
         .brand-name {
-            font-size: 1.2rem !important;
+            font-size: 1.3rem !important;
             transform: none !important;
             margin: 0 !important;
             line-height: 1 !important;
+            display: block !important;
         }
         .brand-tagline {
             display: none !important;
@@ -697,8 +703,8 @@ pre.wp-block-verse{overflow:auto;white-space:pre-wrap}:where(pre.wp-block-verse)
         }
         .hdr-hamburger {
             display: flex !important;
-            order: 1 !important;
-            position: relative !important;
+            position: absolute !important;
+            left: 15px !important;
             z-index: 10 !important;
             background: transparent !important;
             border: none !important;
@@ -706,14 +712,14 @@ pre.wp-block-verse{overflow:auto;white-space:pre-wrap}:where(pre.wp-block-verse)
         }
         .hdr-search {
             display: flex !important;
-            order: 3 !important;
-            position: relative !important;
+            position: absolute !important;
+            right: 15px !important;
             z-index: 10 !important;
             background: transparent !important;
             border: none !important;
             padding: 5px !important;
             color: #fff !important;
-            font-size: 1.2rem !important;
+            font-size: 1.3rem !important;
         }
     }
 

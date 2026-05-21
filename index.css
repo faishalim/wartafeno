@@ -143,7 +143,7 @@ pre.wp-block-verse{overflow:auto;white-space:pre-wrap}:where(pre.wp-block-verse)
     flex-direction: column !important;
     justify-content: center !important;
     line-height: 1 !important;
-    width: 130px !important; /* Lebar tetap yang aman */
+    width: auto !important;
     flex-shrink: 0 !important;
     margin-left: 0 !important;
   }
@@ -155,8 +155,6 @@ pre.wp-block-verse{overflow:auto;white-space:pre-wrap}:where(pre.wp-block-verse)
     white-space: nowrap;
     display: block !important;
     width: 100%;
-    transform: scaleX(1.10);
-    transform-origin: left;
   }
   .brand-name .warta { color: #ffffff !important; }
   .brand-name .feno { color: var(--clr-secondary) !important; }
@@ -429,217 +427,7 @@ pre.wp-block-verse{overflow:auto;white-space:pre-wrap}:where(pre.wp-block-verse)
     }
 
 
-/* ============================================
-   First-Time Visitor Popup Styles
-   
-   Size: 720x720px
-   Customize colors/fonts below
-   ============================================ */
 
-/* Overlay */
-.lgr-popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(4px);
-    z-index: 99999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-}
-
-/* Container */
-.lgr-popup-container {
-    position: relative;
-    width: 100%;
-    max-width: 720px;
-    max-height: 720px;
-    background: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    animation: lgrPopupSlideIn 0.3s ease-out;
-}
-
-@keyframes lgrPopupSlideIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px) scale(0.95);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-/* Close Button */
-.lgr-popup-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 40px;
-    height: 40px;
-    background: rgba(0, 0, 0, 0.1);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s;
-    z-index: 10;
-}
-
-.lgr-popup-close:hover {
-    background: rgba(0, 0, 0, 0.2);
-    transform: rotate(90deg);
-}
-
-.lgr-popup-close svg {
-    width: 20px;
-    height: 20px;
-    color: #666;
-}
-
-/* Content Wrapper */
-.lgr-popup-content {
-    flex: 1;
-    overflow-y: auto;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Header */
-.lgr-popup-header {
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.lgr-popup-logo {
-    max-width: 150px;
-    height: auto;
-}
-
-/* Body */
-.lgr-popup-body {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.lgr-popup-title {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin: 0 0 1rem;
-    text-align: center;
-}
-
-.lgr-popup-text {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #4b5563;
-    margin: 0 0 1.5rem;
-    text-align: center;
-}
-
-/* Highlight Box */
-.lgr-popup-highlight {
-    background: linear-gradient(135deg, #fef3f3 0%, #fff1f1 100%);
-    border-left: 4px solid #990101;
-    padding: 1.25rem;
-    border-radius: 0 8px 8px 0;
-    margin-bottom: 1.5rem;
-}
-
-.lgr-popup-highlight p {
-    margin: 0;
-    font-size: 0.9375rem;
-    line-height: 1.6;
-    color: #374151;
-}
-
-/* Action Buttons */
-.lgr-popup-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-top: auto;
-}
-
-.lgr-popup-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.875rem 1.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-
-.lgr-popup-btn-primary {
-    background: linear-gradient(135deg, #990101 0%, #7a0101 100%);
-    color: #ffffff;
-    box-shadow: 0 4px 14px rgba(153, 1, 1, 0.3);
-}
-
-.lgr-popup-btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(153, 1, 1, 0.4);
-}
-
-.lgr-popup-btn-secondary {
-    background: #fff;
-    color: #6b7280;
-    border: 1px solid #e5e7eb;
-}
-
-.lgr-popup-btn-secondary:hover {
-    background: #f9fafb;
-    border-color: #d1d5db;
-}
-
-/* Footer */
-.lgr-popup-footer {
-    padding: 1rem 2rem;
-    background: #f9fafb;
-    border-top: 1px solid #e5e7eb;
-}
-
-.lgr-popup-checkbox {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.875rem;
-    color: #6b7280;
-    cursor: pointer;
-}
-
-.lgr-popup-checkbox input {
-    width: 16px;
-    height: 16px;
-    accent-color: #990101;
-}
-
-/* Banner Image Option */
-.lgr-popup-banner {
-    width: 100%;
-    height: auto;
-    display: block;
-}
 
     /* ── Mobile Header Optimization ── */
     @media (max-width: 768px) {
@@ -671,22 +459,28 @@ pre.wp-block-verse{overflow:auto;white-space:pre-wrap}:where(pre.wp-block-verse)
             left: auto !important;
             top: auto !important;
             transform: none !important;
-            gap: 10px !important; /* Jarak disesuaikan menjadi 10px */
+            gap: 8px !important; /* Jarak dirapatkan lagi */
             white-space: nowrap !important;
             margin: 0 !important;
+            padding: 0 !important;
             width: auto !important;
             z-index: 99 !important;
         }
         .hdr-logo-icon {
-            height: 32px !important;
+            height: 28px !important;
+            max-width: 120px !important;
             width: auto !important;
             display: block !important;
+            margin: 0 !important;
+            padding: 0 !important;
         }
         .brand-container {
             width: auto !important;
             display: flex !important;
             flex-direction: column !important;
             justify-content: center !important;
+            margin: 0 !important;
+            padding: 0 !important;
         }
         .brand-name {
             font-size: 1.3rem !important;
@@ -722,5 +516,6 @@ pre.wp-block-verse{overflow:auto;white-space:pre-wrap}:where(pre.wp-block-verse)
             font-size: 1.3rem !important;
         }
     }
+
 
 

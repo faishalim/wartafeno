@@ -648,41 +648,49 @@ pre.wp-block-verse{overflow:auto;white-space:pre-wrap}:where(pre.wp-block-verse)
         }
         .hdr-nav {
             padding: 10px 0 !important;
-            height: auto !important;
+            height: 60px !important; /* Fixed height for consistent centering */
+            display: flex !important;
+            align-items: center !important;
         }
         .hdr-nav-inner {
             padding: 0 15px !important;
             display: flex !important;
             align-items: center !important;
             justify-content: space-between !important;
-            gap: 0 !important;
             width: 100% !important;
             max-width: 100% !important;
+            position: relative !important;
         }
         .hdr-logo-sticky-left {
             display: flex !important;
-            order: 2 !important;
-            margin: 0 !important;
+            align-items: center !important;
             position: absolute !important;
             left: 50% !important;
-            transform: translateX(-50%) !important;
+            top: 50% !important;
+            transform: translate(-50%, -50%) !important;
             gap: 8px !important;
-            white-space: nowrap;
+            white-space: nowrap !important;
+            margin: 0 !important;
+            width: auto !important;
         }
         .hdr-logo-icon {
-            height: 28px !important;
+            height: 30px !important;
             width: auto !important;
         }
         .brand-container {
             width: auto !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
         }
         .brand-name {
             font-size: 1.2rem !important;
             transform: none !important;
             margin: 0 !important;
+            line-height: 1 !important;
         }
         .brand-tagline {
-            display: none !important; /* Tagline dihilangkan di mobile agar tidak sesak */
+            display: none !important;
         }
         .hdr-menu {
             display: none !important; 

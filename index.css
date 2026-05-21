@@ -171,13 +171,13 @@ pre.wp-block-verse{overflow:auto;white-space:pre-wrap}:where(pre.wp-block-verse)
     letter-spacing: 0.01em;
   }
   .hdr-nav-inner {
-    padding: 0 40px !important;
+    padding: 0 20px !important;
     display: flex !important;
     align-items: center !important;
-    gap: 30px !important; /* Jarak aman antara Logo Sticky dan Menu */
+    gap: 20px !important; /* Jarak dirapatkan */
   }
   .hdr-menu {
-    gap: 20px !important; /* Jarak antar item menu (Warta, Liputan, dsb) */
+    gap: 12px !important; /* Jarak antar item menu dirapatkan */
     margin: 0 !important;
     padding: 0 !important;
     display: flex !important;
@@ -197,6 +197,8 @@ pre.wp-block-verse{overflow:auto;white-space:pre-wrap}:where(pre.wp-block-verse)
   .hdr-menu a {
     color: #ffffff !important;
     opacity: 1 !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
   }
   .hdr-social a {
     color: #ffffff !important;

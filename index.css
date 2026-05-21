@@ -112,7 +112,7 @@ pre.wp-block-verse{overflow:auto;white-space:pre-wrap}:where(pre.wp-block-verse)
     flex-direction: row !important;
     align-items: center !important;
     text-decoration: none !important;
-    gap: 20px !important; /* Jarak diperlebar untuk keamanan */
+    gap: 10px !important; /* Jarak disesuaikan menjadi 10px */
     flex-shrink: 0 !important;
     width: auto !important;
     justify-content: flex-start !important;
@@ -671,7 +671,7 @@ pre.wp-block-verse{overflow:auto;white-space:pre-wrap}:where(pre.wp-block-verse)
             left: auto !important;
             top: auto !important;
             transform: none !important;
-            gap: 8px !important;
+            gap: 10px !important; /* Jarak disesuaikan menjadi 10px */
             white-space: nowrap !important;
             margin: 0 !important;
             width: auto !important;
